@@ -25,3 +25,4 @@ dependencies:
   - scikit-learn==1.0.2
   - ipywidgets==7.7.0
   - pytorch-lightning==1.6.0
+  - optuna==2.10.0
