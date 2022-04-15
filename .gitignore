@@ -164,3 +164,4 @@ cython_debug/
 *.pkl
 *.joblib
 data/*.csv
+data/*.zip
