@@ -1,6 +1,10 @@
 # Cryptonews Sentiment Jupyter Notebooks
 
-[Project description](https://www.notion.so/42e0593fcf9d48a78f503c7a3d0bc619) (Russian only.).
+[Project description](https://www.notion.so/42e0593fcf9d48a78f503c7a3d0bc619) (Russian only).
+
+## Setting up the environment 
+
+Run `bash setup_env.sh` (beware: `bash`, not `sh`). This will download and install Miniconda with Python 3.9 and install all dependencies from `gpu_environment.yml`.
 
 Fixed cross-validation folds for experiments: `data/folds.csv`, [notebook](notebooks/20220411_btc_4500_titles_fix_folds_for_validations.ipynb). The baseline tf-idf & logreg model hits 72.1% accuracy in this setup. 
 
