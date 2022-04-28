@@ -16,6 +16,7 @@ dependencies:
   - flake8==4.0.1
   - mypy==0.942
   - pre-commit==2.17.0
+  - feedparser==6.0.8
   - notebook==6.4.10
   - isort==5.10.1
   - opencv-python==4.5.5.64
@@ -26,3 +27,5 @@ dependencies:
   - ipywidgets==7.7.0
   - pytorch-lightning==1.6.0
   - optuna==2.10.0
+  - spacy==3.2.4
+  - spacy-langdetect==0.1.2

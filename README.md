@@ -24,3 +24,5 @@ Run `bash setup_env.sh` (beware: `bash`, not `sh`). This will download and insta
 - Placeholder titles need to be removed. E.g. "Bitcoin daily chart alert" is seen >90 times. 
 
 5\. Annotator accuracy as measured against the majority vote ranges from 81% to 90% while Tf-Idf & logreg baseline hits 69% only - [notebook](notebooks/20220420_analyze_amt_assessment_two_trial_batches.ipynb).
+
+6\. [This notebook](notebooks/20220426_RSS_parser_example.ipynb) shows an example of RSS feed parsing to obtain cryptonews titles.
