@@ -127,11 +127,12 @@ class Predictor:
         )
 
         self.model = self.model.to(self.device)
-        self.tokenizer = build_object(model.cfg["tokenizer"], is_hugging_face=True)
+        self.cfg = model.cfg
+        self.tokenizer = build_object(self.cfg["tokenizer"], is_hugging_face=True)
 
     @torch.no_grad()
     def __call__(self, data: List[str]) -> np.ndarray:
-        encodings = self.tokenizer(data, truncation=True, padding=True)
+        encodings = self.tokenizer(data, **self.cfg["tokenizer"]["call_params"])
 
         item = {
             key: torch.tensor(val, device=self.device) for key, val in encodings.items()

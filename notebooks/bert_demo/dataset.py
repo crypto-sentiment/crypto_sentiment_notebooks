@@ -26,7 +26,7 @@ def prepare_dataset(cfg: Dict[str, Any], data: list, labels: list) -> Dataset:
 
     tokenizer = build_object(cfg["tokenizer"], is_hugging_face=True)
 
-    encodings = tokenizer(data, truncation=True, padding=True)
+    encodings = tokenizer(data, **cfg["tokenizer"]["call_params"])
 
     return FinNewsDataset(encodings, labels)
 
