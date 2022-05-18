@@ -29,3 +29,4 @@ dependencies:
   - optuna==2.10.0
   - spacy==3.2.4
   - spacy-langdetect==0.1.2
+  - checklist==0.0.11
