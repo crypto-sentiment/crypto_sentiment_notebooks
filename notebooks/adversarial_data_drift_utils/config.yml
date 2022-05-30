@@ -1,0 +1,31 @@
+name: "Tf-Idf & logreg"
+version: 0.1.0
+
+data:
+  text_col_name: title
+  label_col_name: is_new
+  path_to_old_data: "../data/20190110_train_4500.csv"
+  path_to_new_data: "../data/20220530_rss_feed_2022_onwards.csv"
+
+model:
+  tfidf: # See https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html
+    stop_words: english
+    ngram_range: (1, 2)
+    analyzer: word
+    min_df: 2
+    lowercase: True
+    max_features: 50000
+  logreg: # See https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
+    C: 1
+    solver: lbfgs
+    random_state: 17
+    max_iter: 500
+    n_jobs: 4
+    fit_intercept: True
+
+cross_validation:                             # Params of cross-validation
+  cv_n_splits: 5
+  cv_n_repeats: 30
+  cv_random_state: 17
+  cv_n_jobs: 4
+  cv_scoring: roc_auc
