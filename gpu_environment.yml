@@ -30,3 +30,6 @@ dependencies:
   - spacy==3.2.4
   - spacy-langdetect==0.1.2
   - checklist==0.0.11
+  - delorean>=1.0.0
+  - pytz>=2022.1
+  - mmh3>=3.0.0
