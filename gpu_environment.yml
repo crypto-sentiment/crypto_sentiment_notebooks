@@ -15,19 +15,23 @@ dependencies:
   - black[jupyter]==22.3.0
   - checklist==0.0.11
   - datasets==2.0.0
+  - delorean>=1.0.0
   - eli5==0.11.0
   - feedparser==6.0.8
   - flake8==4.0.1
   - ipywidgets==7.7.0
   - isort==5.10.1
+  - mmh3>=3.0.0
   - mypy==0.942
   - notebook==6.4.10
   - opencv-python==4.5.5.64
   - optuna==2.10.0
   - pre-commit==2.17.0
   - pytorch-lightning==1.6.0
+  - pytz>=2022.1
   - scikit-learn==1.0.2
   - spacy-langdetect==0.1.2
   - spacy==3.2.4
   - timm==0.5.4
   - transformers==4.18.0
+
