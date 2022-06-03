@@ -28,3 +28,5 @@ Run `bash setup_env.sh` (beware: `bash`, not `sh`). This will download and insta
 6\. [This notebook](notebooks/20220426_RSS_parser_example.ipynb) shows an example of RSS feed parsing to obtain cryptonews titles.
 
 7\. [This notebook](notebooks/20220430_btc_4500_titles_and_assessment_data_checklist.ipynb) provides several examples how to test a model with the checklist package (https://github.com/marcotcr/checklist)
+
+8\. [This notebook](notebooks/20220530_get_rss_feed_news_perform_eda.ipynb) crawls RSS feeds and performs an EDA to come up with filtering rules: on publication timestamp, title length, excluding records without a verb, also non-English records, etc.
