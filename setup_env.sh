@@ -17,7 +17,7 @@ chmod +x ~/miniconda.sh \
 conda install --channel defaults conda python=3.9 --yes
 conda update --channel defaults --all --yes
 
-# Install dependencides
+# Install dependencies
 conda env update -n base -f gpu_environment.yml \
     && conda clean -ya \
     && bash --login
