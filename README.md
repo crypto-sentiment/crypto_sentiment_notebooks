@@ -41,8 +41,8 @@ Run `bash setup_env.sh` (beware: `bash`, not `sh`). This will download and insta
 
 13\. [Here](notebooks/20221108_correlate_sentiments_with_btc_price.ipynb) we plot Cryptobarometer daily average predicted positive sentiments vs. daily BTC price vs. [Fear & Greed Index](https://alternative.me/crypto/fear-and-greed-index/) for the period May 2022 - Nov 2022. And, not surprisingly, we are much worse than Fear & Greed.
 
-<img src="figures/20221108_sentiment_vs_btc_rate_vs_fng_may22_oct22.png" />
+<img src="figures/20221108_sentiment_vs_btc_rate_vs_fng_may22_oct22.png" width=70% />
 
 Fear & Greed Index is way better, especially when compared at a shorter time scale, e.g. Aug-Oct 2022.
 
-<img src="figures/20221108_sentiment_vs_btc_rate_vs_fng_aug22_oct22.png"/>
+<img src="figures/20221108_sentiment_vs_btc_rate_vs_fng_august22_oct22.png" width=70% />
