@@ -39,10 +39,10 @@ Run `bash setup_env.sh` (beware: `bash`, not `sh`). This will download and insta
 
 12\. [This notebook](notebooks/20220715_explore_model_errors_with_400_labeled_news_from_RSS_feeds.ipynb) validates BERT predictions w.r.t. to 400 news titles from RSS feeds that were hand-labeled in June-July 2022. The model is only 50% accurate. Moreover, model errors are typically confirmed when compared to human labels: either the model is indeed wrong, or the case is controversial.
 
-13\. [Here](notebooks/20221108_correlate_sentiments_with_btc_price.ipynb) we plot daily average predicted positive sentiments vs. daily BTC price for the period May 2022 - Nov 2022. And, not surprisingly, find no meaningful correlation, aboyt 27% Pearson. 
+13\. [Here](notebooks/20221108_correlate_sentiments_with_btc_price.ipynb) we plot daily average predicted positive sentiments vs. daily BTC price for the period May 2022 - Nov 2022. And, not surprisingly, find no meaningful correlation, about 27% Pearson. 
 
-<img src="figures/20221108_sentiment_vs_btc_rate.png" width=70% />
+<img src="figures/20221108_sentiment_vs_btc_rate_vs_fng_may22_oct22.png" />
 
-Well, for October 2022, the correllation is 47% and visibly, two series correlate much better, but the model/data are hardly good enough to pursue this further.
+Fear & Greed Index is way better, especially when compared at a shorter time scale, e.g. Aug-Ocrt 2022.
 
-<img src="figures/20221108_sentiment_vs_btc_rate_oct22.png" width=70% />
+<img src="figures/20221108_sentiment_vs_btc_rate_vs_fng_aug22_oct22.png"/>
