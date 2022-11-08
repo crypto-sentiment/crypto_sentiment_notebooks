@@ -163,6 +163,8 @@ cython_debug/
 .DS_Store
 *.pkl
 *.joblib
+*.ckpt
+*.onnx
 data/*.csv
 data/*.zip
 data/archive/

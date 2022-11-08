@@ -31,8 +31,18 @@ Run `bash setup_env.sh` (beware: `bash`, not `sh`). This will download and insta
 
 8\. [This notebook](notebooks/20220530_get_rss_feed_news_perform_eda.ipynb) crawls RSS feeds and performs an EDA to come up with filtering rules: on publication timestamp, title length, excluding records without a verb, also non-English records, etc.
 
-9\. [This notebook](notebooks/20220530_adversarial_validation_for_data_drift_train_vs_recent_rss_feeds.ipynb) runs adversarial validation to detect data drift – even a simple tf-dif&logreg model can easily distinguish the training set (2017-2018) from the new records from RSS feeds (2022). Also, the features that drifted most are visualized.
+9\. [This notebook](notebooks/20220530_adversarial_validation_for_data_drift_train_vs_recent_rss_feeds.ipynb) runs adversarial validation to detect data drift – even a simple tf-dif&logreg model can easily distinguish the training set (2017-2018) from the new records from RSS feeds (2022). Also, the features that drifted most are visualized.  
 
 10\. [This notebook](notebooks/20220625_calibrate_bert_probs.ipynb) trains bert model with probability calibration.
 
 11\. [This notebook](notebooks/20220418_active_learning_survey.ipynb) compares several active learning approaches.
+
+12\. [This notebook](notebooks/20220715_explore_model_errors_with_400_labeled_news_from_RSS_feeds.ipynb) validates BERT predictions w.r.t. to 400 news titles from RSS feeds that were hand-labeled in June-July 2022. The model is only 50% accurate. Moreover, model errors are typically confirmed when compared to human labels: either the model is indeed wrong, or the case is controversial.
+
+13\. [Here](notebooks/20221108_correlate_sentiments_with_btc_price.ipynb) we plot daily average predicted positive sentiments vs. daily BTC price for the period May 2022 - Nov 2022. And, not surprisingly, find no meaningful correlation, about 27% Pearson. 
+
+<img src="figures/20221108_sentiment_vs_btc_rate_vs_fng_may22_oct22.png" />
+
+Fear & Greed Index is way better, especially when compared at a shorter time scale, e.g. Aug-Ocrt 2022.
+
+<img src="figures/20221108_sentiment_vs_btc_rate_vs_fng_aug22_oct22.png"/>
